@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Australian Cash Counter | Cash Register Calculator</title>
+    <link rel="stylesheet" href="../../main.css">
+    <link rel="stylesheet" href="aus.css">
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i data-feather="dollar-sign" class="logo-icon"></i>
+        </div>
+        <div class="title-container">
+            <h1>Cash Register Calculator</h1>
+            <nav class="nav_list">
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="aus.html" class="active">Australian Dollar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="cash-register">
+            <div class="register-header">
+                <h2>Australian Dollar Cash Count</h2>
+                <p>Enter the quantity of each denomination to calculate the total.</p>
+                <div class="input-fields-container">
+                    <div class="date-field">
+                        <label for="count-date">Date:</label>
+                        <input type="date" id="count-date" class="date-input">
+                    </div>
+                    <div class="user-field">
+                        <label for="user-name">Name:</label>
+                        <input type="text" id="user-name" class="user-input" placeholder="Enter your name">
+                    </div>
+                </div>
+            </div>
+
+            <div class="register-section">
+                <h2>Notes</h2>
+                <div class="denomination-grid">
+                    <div class="denomination">
+                        <div class="denomination-image note-100">
+                            <div class="note-symbol">$100</div>
+                        </div>
+                        <div class="denomination-input">
+                            <label>$100 Notes</label>
+                            <input type="number" min="0" class="count-input" data-value="100" data-type="note" id="note-100" value="0">
+                        </div>
+                    </div>
+
+                    <div class="denomination">
+                        <div class="denomination-image note-50">
+                            <div class="note-symbol">$50</div>
+                        </div>
+                        <div class="denomination-input">
+                            <label>$50 Notes</label>
+                            <input type="number" min="0" class="count-input" data-value="50" data-type="note" id="note-50" value="0">
+                        </div>
+                    </div>
+
+                    <div class="denomination">
+                        <div class="denomination-image note-20">
+                            <div class="note-symbol">$20</div>
+                        </div>
+                        <div class="denomination-input">
+                            <label>$20 Notes</label>
+                            <input type="number" min="0" class="count-input" data-value="20" data-type="note" id="note-20" value="0">
+                        </div>
+                    </div>
+
+                    <div class="denomination">
+                        <div class="denomination-image note-10">
+                            <div class="note-symbol">$10</div>
+                        </div>
+                        <div class="denomination-input">
+                            <label>$10 Notes</label>
+                            <input type="number" min="0" class="count-input" data-value="10" data-type="note" id="note-10" value="0">
+                        </div>
+                    </div>
+
+                    <div class="denomination">
+                        <div class="denomination-image note-5">
+                            <div class="note-symbol">$5</div>
+                        </div>
+                        <div class="denomination-input">
+                            <label>$5 Notes</label>
+                            <input type="number" min="0" class="count-input" data-value="5" data-type="note" id="note-5" value="0">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="register-section">
+                <h2>Coins</h2>
+                <div class="denomination-grid">
+                    <div class="denomination">
+                        <div class="denomination-image coin-2">
+                            <div class="coin-symbol">$2</div>
+                        </div>
+                        <div class="denomination-input">
+                            <label>$2 Coins</label>
+                            <input type="number" min="0" class="count-input" data-value="2" data-type="coin" id="coin-2" value="0">
+                        </div>
+                    </div>
+
+                    <div class="denomination">
+                        <div class="denomination-image coin-1">
+                            <div class="coin-symbol">$1</div>
+                        </div>
+                        <div class="denomination-input">
+                            <label>$1 Coins</label>
+                            <input type="number" min="0" class="count-input" data-value="1" data-type="coin" id="coin-1" value="0">
+                        </div>
+                    </div>
+
+                    <div class="denomination">
+                        <div class="denomination-image coin-50c">
+                            <div class="coin-symbol">50¢</div>
+                        </div>
+                        <div class="denomination-input">
+                            <label>50¢ Coins</label>
+                            <input type="number" min="0" class="count-input" data-value="0.5" data-type="coin" id="coin-50c" value="0">
+                        </div>
+                    </div>
+
+                    <div class="denomination">
+                        <div class="denomination-image coin-20c">
+                            <div class="coin-symbol">20¢</div>
+                        </div>
+                        <div class="denomination-input">
+                            <label>20¢ Coins</label>
+                            <input type="number" min="0" class="count-input" data-value="0.2" data-type="coin" id="coin-20c" value="0">
+                        </div>
+                    </div>
+
+                    <div class="denomination">
+                        <div class="denomination-image coin-10c">
+                            <div class="coin-symbol">10¢</div>
+                        </div>
+                        <div class="denomination-input">
+                            <label>10¢ Coins</label>
+                            <input type="number" min="0" class="count-input" data-value="0.1" data-type="coin" id="coin-10c" value="0">
+                        </div>
+                    </div>
+
+                    <div class="denomination">
+                        <div class="denomination-image coin-5c">
+                            <div class="coin-symbol">5¢</div>
+                        </div>
+                        <div class="denomination-input">
+                            <label>5¢ Coins</label>
+                            <input type="number" min="0" class="count-input" data-value="0.05" data-type="coin" id="coin-5c" value="0">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="total-section">
+                <div class="total-grid">
+                    <div class="total-item">
+                        <label>Notes Total:</label>
+                        <span id="notes-total">$0.00</span>
+                    </div>
+                    <div class="total-item">
+                        <label>Coins Total:</label>
+                        <span id="coins-total">$0.00</span>
+                    </div>
+                    <div class="total-item">
+                        <label>Note Count:</label>
+                        <span id="notes-count">0</span>
+                    </div>
+                    <div class="total-item">
+                        <label>Coin Count:</label>
+                        <span id="coins-count">0</span>
+                    </div>
+                </div>
+                <div class="grand-total">
+                    <div>
+                        <label>Grand Total:</label>
+                        <span id="grand-total">$0.00</span>
+                    </div>
+                    <div class="date-time" id="current-date-time"></div>
+                </div>
+            </div>
+
+            <div class="action-buttons">
+                <button id="reset-button" class="action-button secondary-button">
+                    <i data-feather="refresh-cw"></i>
+                    Reset
+                </button>
+                <button id="save-button" class="action-button secondary-button">
+                    <i data-feather="save"></i>
+                    Save
+                </button>
+                <button id="print-button" class="action-button primary-button">
+                    <i data-feather="printer"></i>
+                    Print
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>A simple tool for counting cash at the end of the day</p>
+        </div>
+    </footer>
+
+    <script src="../../app.js"></script>
+    <script src="aus.js"></script>
+</body>
+</html>

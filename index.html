@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash Register Calculator</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i data-feather="dollar-sign" class="logo-icon"></i>
+        </div>
+        <div class="title-container">
+            <h1>Cash Register Calculator</h1>
+            <nav class="nav_list">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="country/Australia/aus.html">Australian Dollar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="intro-section">
+            <h2>Welcome to Cash Register Calculator</h2>
+            <p>A simple tool to help you count money at the end of the day. Select your currency to get started.</p>
+        </div>
+        
+        <div class="container">
+            <div class="currency-card">
+                <a href="country/Australia/aus.html" class="currency-link">
+                    <div class="flag-container">
+                        <svg class="flag" viewBox="0 0 1280 640" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="1280" height="640" fill="#012169"/>
+                            <path d="M0,0 L640,320 L0,640 Z M1280,0 L640,320 L1280,640 Z" fill="none" stroke="#ffffff" stroke-width="66"/>
+                            <path d="M0,0 L640,320 L0,640 Z M1280,0 L640,320 L1280,640 Z" fill="none" stroke="#e4002b" stroke-width="44"/>
+                            <path d="M640,0 V640 M0,320 H1280" stroke="#ffffff" stroke-width="100"/>
+                            <path d="M640,0 V640 M0,320 H1280" stroke="#e4002b" stroke-width="60"/>
+                            <g fill="#ffffff">
+                                <polygon points="900,96 920,160 980,160 930,200 950,260 900,220 850,260 870,200 820,160 880,160"/>
+                                <polygon points="900,340 920,400 980,400 930,440 950,500 900,460 850,500 870,440 820,400 880,400"/>
+                                <polygon points="1100,260 1120,320 1180,320 1130,360 1150,420 1100,380 1050,420 1070,360 1020,320 1080,320"/>
+                                <polygon points="700,200 720,260 780,260 730,300 750,360 700,320 650,360 670,300 620,260 680,260"/>
+                                <polygon points="780,520 800,580 860,580 810,620 830,580 780,540 730,580 750,520 700,480 760,480"/>
+                            </g>
+                        </svg>
+                    </div>
+                    <h3>Australian Dollar (AUD)</h3>
+                    <p>Count Australian notes and coins</p>
+                </a>
+            </div>
+            <!-- More currency options can be added here in the future -->
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 Cash Register Calculator</p>
+            <p>A simple tool for counting cash at the end of the day</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            feather.replace();
+        });
+    </script>
+    <script src="app.js"></script>
+</body>
+</html>

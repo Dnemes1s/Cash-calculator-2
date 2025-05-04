@@ -1,0 +1,363 @@
+/* Australian Dollar specific styles */
+
+/* Note styling */
+.note-symbol {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.note-100 {
+    background: linear-gradient(135deg, #046604 0%, #1a8a1a 100%);
+}
+
+.note-100 .note-symbol {
+    background-color: #046604;
+}
+
+.note-50 {
+    background: linear-gradient(135deg, #bb5511 0%, #dd7733 100%);
+}
+
+.note-50 .note-symbol {
+    background-color: #bb5511;
+}
+
+.note-20 {
+    background: linear-gradient(135deg, #a61c1c 0%, #c73232 100%);
+}
+
+.note-20 .note-symbol {
+    background-color: #a61c1c;
+}
+
+.note-10 {
+    background: linear-gradient(135deg, #1a3a8a 0%, #3055b5 100%);
+}
+
+.note-10 .note-symbol {
+    background-color: #1a3a8a;
+}
+
+.note-5 {
+    background: linear-gradient(135deg, #6b287e 0%, #8a3ca0 100%);
+}
+
+.note-5 .note-symbol {
+    background-color: #6b287e;
+}
+
+/* Coin styling */
+.coin-symbol {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 1.2rem;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+}
+
+.coin-2 .coin-symbol {
+    background: radial-gradient(#f7df4f, #d4b82d);
+    color: #333;
+    border: 2px solid #e6ce3c;
+}
+
+.coin-1 .coin-symbol {
+    background: radial-gradient(#f7df4f, #d4b82d);
+    color: #333;
+    border: 2px solid #e6ce3c;
+}
+
+.coin-50c .coin-symbol {
+    background: radial-gradient(#e0e0e0, #b8b8b8);
+    color: #333;
+    border: 2px solid #c8c8c8;
+}
+
+.coin-20c .coin-symbol {
+    background: radial-gradient(#e0e0e0, #b8b8b8);
+    color: #333;
+    border: 2px solid #c8c8c8;
+}
+
+.coin-10c .coin-symbol {
+    background: radial-gradient(#e0e0e0, #b8b8b8);
+    color: #333;
+    border: 2px solid #c8c8c8;
+}
+
+.coin-5c .coin-symbol {
+    background: radial-gradient(#e0e0e0, #b8b8b8);
+    color: #333;
+    border: 2px solid #c8c8c8;
+}
+
+/* Register header styling */
+.register-header {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.register-header h2 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.register-header p {
+    color: #7f8c8d;
+    margin-bottom: 1rem;
+}
+
+.input-fields-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 15px auto;
+    max-width: 650px;
+}
+
+.date-field, .user-field {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.date-field label, .user-field label {
+    font-weight: 600;
+    color: #2c3e50;
+    min-width: 60px;
+    text-align: right;
+}
+
+.date-input, .user-input {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #2c3e50;
+    flex: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .input-fields-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .date-field, .user-field {
+        width: 100%;
+    }
+}
+
+/* Date time display */
+.date-time {
+    font-size: 0.9rem;
+    color: #ecf0f1;
+}
+
+/* Print specific styles */
+@media print {
+    header, footer, .action-buttons {
+        display: none;
+    }
+
+    body {
+        background-color: white;
+        font-family: Arial, sans-serif;
+        font-size: 12pt;
+        margin: 0;
+        padding: 0;
+    }
+
+    main {
+        padding: 0;
+        margin: 0;
+    }
+
+    .print-container {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .print-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px solid #2c3e50;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+
+    .print-header h1 {
+        font-size: 24pt;
+        margin: 0;
+        color: #2c3e50;
+    }
+
+    .print-date {
+        font-size: 10pt;
+        color: #7f8c8d;
+    }
+
+    .print-summary {
+        background-color: #f8f9fa;
+        padding: 15px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+
+    .print-total-item {
+        margin-bottom: 5px;
+        font-size: 12pt;
+    }
+
+    .print-grand-total {
+        font-size: 18pt;
+        font-weight: bold;
+        margin-bottom: 15px;
+        color: #2c3e50;
+    }
+    
+    .print-details h2 {
+        font-size: 14pt;
+        margin-bottom: 10px;
+        color: #2c3e50;
+    }
+
+    .print-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+
+    .print-table th, 
+    .print-table td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .print-table th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+    }
+
+    .category-row {
+        background-color: #e9ecef;
+        font-weight: bold;
+    }
+
+    .print-footer {
+        margin-top: 30px;
+        text-align: center;
+        font-size: 10pt;
+        color: #7f8c8d;
+        border-top: 1px solid #ddd;
+        padding-top: 10px;
+    }
+    
+    /* Hide everything but the print-container */
+    .cash-register {
+        display: none;
+    }
+}
+
+/* Saved results styling */
+.saved-results-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: white;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    max-height: 80vh;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    overflow-y: auto;
+}
+
+.close-button {
+    float: right;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: #7f8c8d;
+}
+
+.saved-list {
+    margin-top: 20px;
+}
+
+.saved-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.saved-info {
+    flex-grow: 1;
+}
+
+.saved-date {
+    font-size: 0.8rem;
+    color: #7f8c8d;
+}
+
+.saved-user {
+    font-size: 0.85rem;
+    color: #3498db;
+    margin-top: 3px;
+}
+
+.saved-total {
+    font-weight: 600;
+    margin-top: 5px;
+    color: #2c3e50;
+}
+
+.load-button {
+    padding: 6px 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.load-button:hover {
+    background-color: #2980b9;
+}
+
+/* Active nav state */
+.nav_list a.active {
+    color: #3498db;
+    font-weight: 700;
+}
